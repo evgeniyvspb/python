@@ -26,3 +26,4 @@ def funcc(n: int, m: int):
     return list_idx
 
 print(funcc(2,10))
+
