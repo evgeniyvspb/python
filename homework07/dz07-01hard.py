@@ -26,7 +26,7 @@ def search_glas(str1:str, param=True) -> str:
             for idx in range(len(glasnie_bukvi)):
                 if rez_str[pesnya].count(glasnie_bukvi[idx]) !=0 : 
                     glassnih[glasnie_bukvi[idx]]= rez_str[pesnya].count(glasnie_bukvi[idx])
-            glassnih_final.append(str(glassnih))  # Я НЕ СМОГ ПОНЯТЬ!!! как убрать привязку glassnih и glassnih_final (придумал разве что конверт в строку), 
+            glassnih_final.append((str(glassnih)))  # Я НЕ СМОГ ПОНЯТЬ!!! как убрать привязку glassnih и glassnih_final (придумал разве что конверт в строку), 
                                     # при очищении словаря автоматом очищается и список :=((( если есть идеи, буду благодарен   
             glassnih.clear()
         return (f'{search_glas} {glassnih_final}')
